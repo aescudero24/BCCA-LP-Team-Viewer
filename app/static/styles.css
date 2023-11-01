@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: tan;
+  text-align: center;
+}
+
+body {
+  background: lightblue;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  height: 500px;
+  width: 450px;
+  padding: 20px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 50px;
+  box-shadow: 12px 12px 10px black;
+}
+
+.right {
+  height: 500px;
+  width: 450px;
+  padding: 20px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 50px;
+  box-shadow: 12px 12px 10px black;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team {
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 40px 0px;
+}
+
+.team:hover {
+  opacity: 100%;
+}
+
+.management {
+  background: red;
+  opacity: 50%;
+}
+
+.procurement {
+  background: blue;
+  opacity: 50%;
+}
+
+.documentation {
+  background: green;
+  opacity: 50%;
+}
+
+.community {
+  background: yellow;
+  opacity: 50%;
+}
+
+.member {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header {
+  text-align: left;
+  background: black;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}

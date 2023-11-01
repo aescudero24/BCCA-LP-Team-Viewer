@@ -26,6 +26,7 @@ teams = {
             "Owen Cotten",
             "Jeremiah Flowers",
             "Ab McCullough",
+            "Abigail Usener",
         ],
     ),
     "procurement": Team(
@@ -65,8 +66,7 @@ teams = {
             "Micah Gray",
             "Joby Foster",
             "Caleb Horn",
-            "Abigail Usener",
-            "AJ Gililand",
+            "AJ Gilliland",
             "Jordan Donahue",
         ],
     ),

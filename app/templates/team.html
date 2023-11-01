@@ -1,3 +1,4 @@
+{% comment %} {% load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,18 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ team.name }}</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}" >
   </head>
   <body>
-    <h1>
-      <u>{{ team.name }} Team</u>
-    </h1>
-    <h1><u>Description:</u></h1>
-    <p>{{ team.description }}</p>
-    <h1><u>Members:</u></h1>
-    <ul>
-      {% for member in team.members %}
-      <li>{{ member }}</li>
-      {% endfor %}
-    </ul>
+    <header></header>
+    <div id="main">
+      <h1 class="heading">
+        <u>{{ team.name }} Team</u>
+      </h1>
+      <h1><u>Description:</u></h1>
+      <p>{{ team.description }}</p>
+    </div>
+    <footer></footer>
+  </body>
+</html>
+{% endcomment %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ team.name }}</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}" >
+  </head>
+  <body>
+    <header><a href="/">BCCA LPs</a></header>
+    <div id="main">
+      <div class="left">
+        <h1 class="heading">
+          <u>{{ team.name }} Team</u>
+        </h1>
+        <p>{{ team.description }}</p>
+      </div>
+      <div class="right">
+        <h1 class="heading"><u>Members</u></h1>
+        {% for member in team.members %}
+        <u><p class="member">{{ member }}</p></u>
+        {% endfor %}
+      </div>
+    </div>
+
+    <footer></footer>
   </body>
 </html>
