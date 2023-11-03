@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static "styles.css" %}" >
   </head>
   <body>
-    <header><a href="/">BCCA LPs</a></header>
+    <header><a href="{% url "home" %}">BCCA LPs</a></header>
     {% block content%}{% endblock %}
     <footer></footer>
   </body>

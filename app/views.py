@@ -74,7 +74,7 @@ teams = {
 
 
 def home_view(request: HttpRequest) -> HttpResponse:
-    return render(request, "index.html")
+    return render(request, "home.html")
 
 
 def team_view(request: HttpRequest, name: str) -> HttpResponse:
